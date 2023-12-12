@@ -10,7 +10,7 @@ export const RecipeListPage = ({ clickFn }) => {
   const handleChange = (event) => {
     setSearchField(event.target.value);
   };
-// Lowercase fix
+  // Lowercase fix
   const matchedRecipes = data.hits.filter((recipe) => {
     const searchString = searchField.toLowerCase();
     return (
@@ -37,7 +37,7 @@ export const RecipeListPage = ({ clickFn }) => {
       >
         <Heading>
           <Text textAlign="center" fontWeight={300} fontSize={40} mt={[15, 45]}>
-            <strong>WINC</strong> Recipe Searcher.
+            <strong>WINK</strong> Recipe Searcher.
           </Text>
           <SearchInput changeFn={handleChange} w={[200, 500]} mt={2} />
         </Heading>
